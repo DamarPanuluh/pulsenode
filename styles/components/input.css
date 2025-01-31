@@ -1,0 +1,114 @@
+.responsive-input-container {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: all var(--input-transition);
+}
+
+.input-wrapper {
+  position: relative;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  padding: 8px 16px;
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  position: relative;
+}
+
+.toolbar-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin: 0 4px;
+}
+
+.toolbar-button:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.toolbar-button:active {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.toolbar-button.send-button {
+  width: 36px;
+  height: 36px;
+  background-color: #000000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 0;
+}
+
+.toolbar-button.send-button:hover {
+  transform: translateY(-1px);
+  background-color: #1a1a1a;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.toggle-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 44px;
+  background-color: rgba(0, 0, 0, 0.03);
+  border: none;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: all 0.2s ease;
+}
+
+.toggle-button:hover {
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.toggle-button.active {
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.07);
+}
+
+.toggle-button.left {
+  border-right: 1px solid rgba(0, 0, 0, 0.05);
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.toggle-button.right {
+  border-left: 1px solid rgba(0, 0, 0, 0.05);
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.width-toggle-bar {
+  position: absolute;
+  bottom: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 48px;
+  height: 6px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: none;
+  border-radius: 0 0 4px 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.width-toggle-bar:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.width-toggle-bar.active {
+  background-color: #000000;
+}
+

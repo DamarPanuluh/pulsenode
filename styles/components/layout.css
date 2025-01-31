@@ -1,0 +1,17 @@
+.layout-container {
+  display: flex;
+  height: var(--sidebar-height);
+  position: fixed;
+  bottom: 40px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  transition: all var(--sidebar-transition);
+}
+
+@media (max-width: 768px) {
+  .layout-container {
+    flex-direction: column;
+  }
+}
+

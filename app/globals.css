@@ -1,0 +1,8 @@
+@import "../styles/base.css";
+@import "../styles/components/layout.css";
+@import "../styles/components/sidebar.css";
+@import "../styles/components/chat-interface.css";
+@import "../styles/components/input.css";
+@import "../styles/components/capability-card.css";
+@import "../styles/components/tabs.css";
+

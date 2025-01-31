@@ -1,0 +1,30 @@
+.tabs-list {
+  display: flex;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+}
+
+.tab-trigger {
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-color);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.tab-trigger[data-state="active"] {
+  color: var(--text-color);
+  border-bottom: 2px solid var(--text-color);
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content[data-state="active"] {
+  display: block;
+}
+
